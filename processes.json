@@ -1,0 +1,19 @@
+{
+  "apps" : [{
+    "name"              : "assets-combine",
+    "instances"         : 1,
+    "script"            : "./pm2-index.js",
+    "log-date-format"   : "YYYY-MM-DD HH:mm Z",
+    "ignoreWatch"       : ["[\\/\\\\]\\./", "node_modules"],
+    "watch"             : "true",
+    "error_file"        : "./storage/pm2-index/err.log",
+    "out_file"          : "./storage/pm2-index/out.log",
+    "pid_file"          : "./storage/pm2-index/pid.pid",
+    "exec_mode"         : "cluster_mode",
+    "port"              : 8190,
+    "env": {
+        "NODE_PORT"     : 8190,
+        "NODE_ENV"      : "pm2-app"
+    }
+  }]
+}

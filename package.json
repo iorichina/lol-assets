@@ -1,0 +1,21 @@
+{
+    "name"          : "assets",
+    "main"          : "./index.js",
+    "version"       : "0.0.1",
+    "description"   : "资源文件请求合并输出系统,启动方式: node master.js，访问端口:8190默认;测试启动: pm2 start test.js, 测试端口:8124",
+    "author"        : {
+        "name"      : "iori-china",
+        "email"     : "iori-china@163.com"
+    },
+    "dependencies"  : {
+        "pm"        : "2.x.x",
+        "config"    : "1.x.x",
+        "redis"     : "0.x.x",
+        "hiredis"   : "0.x.x",
+        "generic-pool"   : "2.x.x"
+    },
+    "repository"    : {
+        "type"      : "",
+        "url"       : ""
+    }
+}
